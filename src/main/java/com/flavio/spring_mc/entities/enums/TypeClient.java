@@ -20,19 +20,19 @@ public enum TypeClient {
         return descricacao;
     }
 
-    public static TypeClient toEnum(Integer cod){
-        if(cod == null){
-            return null;
-        }
+    // public static TypeClient toEnum(Integer cod){
+    //     if(cod == null){
+    //         return null;
+    //     }
 
-        for(TypeClient x : TypeClient.values()){
-            if(cod == x.getCod()){
-                return x;
-            }
-        }
+    //     for(TypeClient x : TypeClient.values()){
+    //         if(cod == x.getCod()){
+    //             return x;
+    //         }
+    //     }
 
-        throw new IllegalArgumentException("Id inválido " + cod);
-    }
+    //     throw new IllegalArgumentException("Id inválido " + cod);
+    // }
 
 }
 
