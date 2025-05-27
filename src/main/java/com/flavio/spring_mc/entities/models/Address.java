@@ -40,7 +40,6 @@ public class Address implements Serializable {
         this.complement = complement;
         this.district = district;
         this.zipCode = zipCode;
-        this.client = client;
         this.city = city;
     }
 
@@ -98,10 +97,6 @@ public class Address implements Serializable {
 
     public void setZipCode(String zipCode) {
         this.zipCode = zipCode;
-    }
-
-    public Client getClient() {
-        return client;
     }
 
     public void setClient(Client client) {
