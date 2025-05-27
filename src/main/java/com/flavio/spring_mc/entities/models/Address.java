@@ -121,16 +121,5 @@ public class Address implements Serializable {
         return getId() != null ? getId().hashCode() : 0;
     }
 
-    @Override
-    public String toString() {
-        return "Address{" +
-                "id=" + id +
-                ", street='" + street + '\'' +
-                ", number='" + number + '\'' +
-                ", complement='" + complement + '\'' +
-                ", district='" + district + '\'' +
-                ", zipCode='" + zipCode + '\'' +
-                ", client=" + client +
-                '}';
-    }
+    
 }
