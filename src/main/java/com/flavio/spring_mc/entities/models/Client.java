@@ -130,8 +130,6 @@ public class Client implements Serializable {
     public String toString() {
         return "Client{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
-                ", mail='" + mail + '\'' +
                 ", cpfOrCnpj='" + cpfOrCnpj + '\'' +
                 ", typeClient=" + typeClient +
                 ", phones=" + phones +
