@@ -41,13 +41,6 @@ public class Order implements Serializable {
     public Order() {
     }
 
-    public Order(Integer id, Instant moment, Client client, Address deliveryAddress) {
-        this.id = id;
-        this.moment = moment;
-        this.client = client;
-        this.deliveryAddress = deliveryAddress;
-    }
-
     public Integer getId() {
         return id;
     }
