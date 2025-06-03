@@ -53,10 +53,6 @@ public abstract class Payment implements Serializable {
         return order;
     }
 
-    public void setOrder(Order order) {
-        this.order = order;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
