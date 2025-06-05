@@ -37,4 +37,8 @@ public class PaymentWithTicket extends Payment{
     public Instant getDatePayment() {
         return datePayment;
     }
+
+    public void setDatePayment(Instant datePayment) {
+        this.datePayment = datePayment;
+    }
 }
