@@ -84,16 +84,6 @@ public class Product implements Serializable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Product product)) return false;
-
-        if (getId() != null ? !getId().equals(product.getId()) : product.getId() != null) return false;
-        if (getName() != null ? !getName().equals(product.getName()) : product.getName() != null) return false;
-        return getPrice() != null ? getPrice().equals(product.getPrice()) : product.getPrice() == null;
-    }
-
-    @Override
     public int hashCode() {
         int result = getId() != null ? getId().hashCode() : 0;
         result = 31 * result + (getName() != null ? getName().hashCode() : 0);
