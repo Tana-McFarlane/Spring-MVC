@@ -45,10 +45,6 @@ public class State implements Serializable {
         this.name = name;
     }
 
-    public List<City> getCity() {
-        return cities;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
