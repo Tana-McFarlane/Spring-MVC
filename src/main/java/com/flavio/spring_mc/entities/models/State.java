@@ -60,14 +60,6 @@ public class State implements Serializable {
     }
 
     @Override
-    public int hashCode() {
-        int result = getId() != null ? getId().hashCode() : 0;
-        result = 31 * result + (getName() != null ? getName().hashCode() : 0);
-        result = 31 * result + (getCity() != null ? getCity().hashCode() : 0);
-        return result;
-    }
-
-    @Override
     public String toString() {
         return "Estado{" +
                 "id=" + id +
