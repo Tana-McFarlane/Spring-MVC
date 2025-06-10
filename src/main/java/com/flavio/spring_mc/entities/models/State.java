@@ -66,13 +66,4 @@ public class State implements Serializable {
         result = 31 * result + (getCity() != null ? getCity().hashCode() : 0);
         return result;
     }
-
-    @Override
-    public String toString() {
-        return "Estado{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", cidades=" + cities +
-                '}';
-    }
 }
