@@ -38,10 +38,10 @@ public class CategoryResource {
         return ResponseEntity.created(uri).build();
     }
 
-    // @PutMapping("/{id}")
-    // public ResponseEntity<Category> updateCategory(@RequestBody Category category, @PathVariable Integer id) {
-    //     category = categoryService.updateCategory(category);
-    //     return ResponseEntity.noContent().build();
-    // }
+    @PutMapping("/{id}")
+    public ResponseEntity<Category> updateCategory(@RequestBody Category category, @PathVariable Integer id) {
+        category = categoryService.updateCategory(category);
+        return ResponseEntity.noContent().build();
+    }
 
 }
